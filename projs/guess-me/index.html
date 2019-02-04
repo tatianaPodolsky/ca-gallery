@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My App</title>
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+  <header class="box">
+    <img src="img/layout/logo.png"/>
+    <h1>Guess Who</h1>
+  </header>
+
+  <main>
+    <section class="game-start">
+      <h2>Think of someone...</h2>
+      <button onclick="onStartGuessing()" class="btn btn-lg btn-warning">I'm Ready!</button>
+    </section>
+    <section class="quest" style="display: none">
+      <h2></h2>
+      <button onclick="onUserResponse('yes')" class="btn btn-outline-success">Yes</button>
+      <button onclick="onUserResponse('no')" class="btn btn-outline-danger">No</button>
+    </section>
+    <div class="jumbotron container-fluid jumbotron-fluid teach-me" style="display: none">
+      <h1 class="display-4">I don't know.. Teach me!</h1>
+      <p class="lead">P.S. So what... Did you think machine learning is different?;)</p>
+      <a class="btn btn-lg btn-warning" href="#" role="button" onclick="onTeachMe()">Yalla!</a>
+    </div>
+    <section class="new-quest" style="display: none">
+      <h2>OK, I gave up...</h2>
+      <span class="input-group-text" id="inputGroup-sizing-default">You thought of:</span>
+      <input name="newGuess" type="text" class="form-control new-guess" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <span class="input-group-text" id="inputGroup-sizing-default">Question to differentiate</span>
+      <input name="newQuest" type="text" class="form-control new-quest" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <button class="btn btn-lg btn-warning" type="submit" onclick="onAddGuess();return false;">Make me Smarter!</button>  
+    </section>
+    <!-- <div class="alert alert-success alert-dismissible fade out" role="alert">
+      Yes, I knew it!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div> -->
+  </main>
+
+  <footer>
+    cofferight &copy; 2016
+  </footer>
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="js/quest-service.js"></script>
+  <script src="js/quest-controller.js"></script>
+
+</body>
+
+</html>

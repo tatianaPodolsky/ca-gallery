@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    text-align: center;
+    color: brown;
+}
+.levels {
+    text-align: center;
+    margin: 0 auto;
+    height: 40px;
+    cursor: pointer;
+}
+
+.level1, .level2, .level3 {
+    margin: 0 0 0 auto;
+    display: inline-block;
+    border: 3px solid grey;
+    background-color: lightblue;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.cell {
+    border: 2px solid rgb(59, 55, 55);
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.cell img {
+    width: 20px;
+}
+.cell.shown {
+    border-style: groove;
+    background-color: rgb(174, 236, 247);
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    border: 1px solid darkblue;
+}
+.hintCell {
+    background-color: rgb(214, 149, 149);
+}
+
+table {
+    margin: 5px auto;
+    background-color: #d3d5d7;
+    border: 3px solid darkblue;
+}
+.replaySmile {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.replaySmile img {
+    width: 35px;
+    margin: 0;
+    padding: 0;
+}
+.hints {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.hint {
+    display: inline-block;
+    font-size: 40px;
+}
+.timer {
+
+    text-align: center;
+    display: inline-block;
+
+    font-size: 20px;
+
+}
+.mine img {
+    width: 20px;
+    padding-top: 5px;
+}
+.flag img {
+    width: 20px;
+    padding-top: 5px;
+}
+.panel {
+    width: auto;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.panel div {
+    margin: 0 0 5px auto;
+
+}
+.score {
+    display: inline-block;
+    font-size: 40px;
+}
+.win-modal {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(59, 128, 45, 0.2);
+    margin: 5px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.win-modal span {
+    vertical-align: middle;
+    font-size: 40px;
+    color: rgb(29, 56, 29);
+}
+.lost-modal {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(177, 14, 14, 0.2);
+    margin: 5px auto;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(img/lost-modal.png);
+    background-repeat: no-repeat;  
+    background-size: 45%;
+    background-position: bottom;
+
+}
+.lost-modal span {
+
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: rgb(133, 22, 22);
+}
