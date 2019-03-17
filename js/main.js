@@ -1,4 +1,4 @@
-console.log('Starting up ido');
+console.log('Starting up');
 var gProjs = [];
 // debugger;
 $(document).ready(initPage);
